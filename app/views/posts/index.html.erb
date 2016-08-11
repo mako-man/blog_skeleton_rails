@@ -1,0 +1,6 @@
+<h1>Posts#index</h1><% @posts.each do |f|%>
+<h2><%=f.title%></h2>
+<p><%=truncate(f.body,:lenght=>35)%></p>
+<br>
+<%=link_to "read post",f%>
+<% end %>
